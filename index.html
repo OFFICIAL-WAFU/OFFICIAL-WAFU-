@@ -6,6 +6,16 @@
     <title>WAFU - La pièce mème la plus folle de Solana</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -15,61 +25,87 @@
             color: white;
             text-align: center;
         }
+        
         header {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 80px 20px;
+            border-bottom: 5px solid #ffcc00;
         }
+        
+        .logo {
+            width: 150px;
+            height: auto;
+            animation: bounce 2s infinite ease-in-out;
+        }
+        
         .btn {
             background-color: #ffcc00;
             padding: 15px 30px;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 22px;
             color: black;
             border-radius: 10px;
             font-weight: bold;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 15px;
+            transition: transform 0.3s ease;
         }
+        
+        .btn:hover {
+            transform: scale(1.1);
+            animation: spin 0.5s linear;
+        }
+        
         .section {
-            padding: 60px 20px;
+            padding: 80px 20px;
             background: rgba(0, 0, 0, 0.7);
             border-radius: 15px;
             margin: 40px auto;
             width: 90%;
             max-width: 1000px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
         }
+        
         .button-container {
             display: flex;
             justify-content: center;
             gap: 20px;
-            margin-top: 20px;
+            margin-top: 30px;
         }
+        
+        .btn img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
         footer {
             background: rgba(0, 0, 0, 0.9);
-            padding: 20px;
+            padding: 25px;
             margin-top: 50px;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="wafu-logo.png" alt="WAFU Logo" class="logo">
         <h1>WAFU 🚀 La pièce mème la plus folle de Solana !</h1>
         <p>Rejoignez la révolution. Propulsée par les mèmes, alimentée par le chaos !</p>
-        <a href="#buy" class="btn">Achetez $WAFU maintenant</a>
+        <a href="#buy" class="btn">🔥 Achetez $WAFU maintenant 🔥</a>
     </header>
     
     <section id="about" class="section">
-        <h2>Qu'est-ce que WAFU ?</h2>
-        <p>$WAFU est le mème coin ultime sur Solana, conçu pour le fun, la communauté et des récompenses imprévisibles. Inspiré par l'énergie et la folie des mèmes, ce token vise à rassembler une communauté dévouée et engagée. Notre objectif est de créer un écosystème amusant et interactif où chaque détenteur peut contribuer et s’amuser.</p>
+        <h2>🔍 Qu'est-ce que WAFU ?</h2>
+        <p>$WAFU est bien plus qu'un simple mème coin. C'est un mouvement, une communauté vibrante et engagée qui croit en l'esprit de la décentralisation et du fun sans limites. Notre objectif est de créer une plateforme où l'humour et l'innovation crypto se rencontrent, avec des récompenses uniques pour nos détenteurs.</p>
     </section>
     
     <section id="community" class="section">
-        <h2>Rejoignez l'armée WAFU !</h2>
-        <p>Faites partie de la communauté de mèmes la plus chaotique et la plus amusante de Solana. En rejoignant WAFU, vous entrez dans un univers où l'humour, la créativité et les récompenses inattendues se mélangent pour une expérience unique.</p>
+        <h2>🚀 Rejoignez l'armée WAFU !</h2>
+        <p>Plongez dans l'univers WAFU et découvrez une communauté de passionnés de crypto et de mèmes. En rejoignant notre écosystème, vous faites partie d'un projet déjanté qui vise à révolutionner l'univers des mème coins !</p>
         <div class="button-container">
             <a href="https://x.com/OFFICIAL_WAFU" target="_blank" class="btn btn-twitter">
-                <img src="twitter-icon.png" alt="Twitter"> 🚀 Suivez-nous sur Twitter
+                <img src="twitter-icon.png" alt="Twitter"> 🐦 Suivez-nous sur Twitter
             </a>
             <a href="https://t.me/OFFICIAL_WAFU" target="_blank" class="btn btn-telegram">
                 <img src="telegram-icon.png" alt="Telegram"> 💬 Rejoignez notre Telegram
@@ -78,7 +114,7 @@
     </section>
     
     <footer>
-        <p>&copy; 2025 WAFU. Tous droits réservés.</p>
+        <p>&copy; 2025 WAFU. Tous droits réservés. | Powered by la folie des mèmes 🎉</p>
     </footer>
 </body>
 </html>
